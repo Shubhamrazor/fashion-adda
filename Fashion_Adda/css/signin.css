@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 78vh;
+    position: fixed;
+    transform: translateY(4vh);
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    margin-left:10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3), -40px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.content,.login{
+    margin: 2%;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgba(13, 62, 75, 0.81);
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    width: 35%;
+    height: 50%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3), -40px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.login-page,.signup-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    grid-row: 2/3; 
+    top: -30%;
+    left:35%;
+}
+.inactive{
+    display: none;
+}
+
+.login{
+    margin-right: 3rem;
+}
+
+
+
+
+.white{
+    background: #ffffff;
+    color:  rgba(13, 62, 75, 0.81);
+}
+.blue{
+    background:  rgba(13, 62, 75, 0.81);
+    color: #ffffff;
+}
+
+
+.button {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.button button{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content p{
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+
+.login-page button,.signup-page button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #FE8185;
+    color: #ffffff;
+    border-radius: 30px; 
+    font-size: 18px;
+    width: 100px;
+
+}
+
+.login-page input,.login-page button,.signup-page input, .signup-page button{
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    align-self: flex-start;
+}
+form{
+   
+    width: 150%;
+    height: 200px;
+    transform: translateX(-30%);
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form button{
+    align-self: center;
+    transform: translateX(100px);
+    padding: 4px;
+}
+.form-input{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+.form-input input{
+    
+    height: 40px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .content{
+        margin-bottom: 30px;
+    }
+    .login{
+        width: 75%;
+    }
+}
+
+footer{
+    position: absolute;
+    top: 92vh;
+    left: 0px;
+    z-index: 1;
+}
