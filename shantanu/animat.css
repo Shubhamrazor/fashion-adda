@@ -1,0 +1,20 @@
+#box{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    animation-name: box;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    text-align: center;
+    line-height: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+@keyframes box{
+    0%{background-color: red;}
+    100%{background-color: #fc3;
+         border-radius: 100px;}
+}
